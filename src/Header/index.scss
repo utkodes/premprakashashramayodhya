@@ -1,6 +1,5 @@
 .header-container {
-  background-color: #ff6f00;
-  padding: 40px 30px;
+  padding: 10px 30px;
   height: 25vh;
   display: flex;
   align-items: center;
@@ -16,5 +15,19 @@
     font-size: 100px;
     color: #ff0000;
     text-shadow: 1px 1px 1px rgb(141, 0, 0), 2px 2px 1px rgb(141, 0, 0);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+
+    img {
+      height: 100px;
+    }
+
+    .background-text {
+      font-size: 50px;
+    }
   }
 }

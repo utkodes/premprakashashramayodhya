@@ -40,7 +40,7 @@ function Info() {
       <div className="box">
         <img src={phone} alt="phone" />
         <div className="nested">
-          {phoneNumber}
+          <span className="text">{phoneNumber}</span>
           <img
             onClick={() => onCopy("Phone Number", phoneNumber)}
             src={copy}
@@ -51,7 +51,7 @@ function Info() {
       <div className="box">
         <img src={email} alt="email" />
         <div className="nested">
-          {mailId}
+          <span className="text">{mailId}</span>
           <img
             onClick={() => onCopy("Mail Id", mailId)}
             src={copy}

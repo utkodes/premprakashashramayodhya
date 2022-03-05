@@ -1,15 +1,22 @@
 .info-container {
   display: flex;
   height: 200px;
+  margin: 20px;
 
   .box {
-    padding: 50px;
+    padding: 10px;
+    margin: 10px;
     height: 100%;
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: whitesmoke;
+
+    &:hover {
+      box-shadow: 1px 1px 5px 2px red;
+    }
 
     img {
       width: 50px;
@@ -22,6 +29,15 @@
 
     .nested {
       margin-top: 20px;
+      display: flex;
+      align-items: baseline;
+
+      .text {
+        display: inline-block;
+        text-overflow: ellipsis;
+        max-width: 200px;
+        overflow: hidden;
+      }
 
       img {
         width: 10px;
@@ -42,5 +58,11 @@
     background-color: white;
     border: 1px solid gray;
     border-radius: 4px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .info-container {
+    flex-direction: column;
   }
 }

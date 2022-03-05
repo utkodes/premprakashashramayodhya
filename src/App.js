@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { AppContext } from "./App.context";
-import "./App.scss";
 import Header from "./Header";
 import Info from "./Info";
 import Gallery from "./Gallery";
