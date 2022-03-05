@@ -1,0 +1,16 @@
+.gallery-container {
+  .slide {
+    padding: 20px;
+    width: 90%;
+    height: 350px;
+    overflow: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+}
