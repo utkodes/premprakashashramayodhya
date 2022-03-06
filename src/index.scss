@@ -5,12 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #ff6f00;
+  background-color: whitesmoke;
   width: 100vw;
   height: 100vh;
-  padding: 20px 0;
+  box-sizing: border-box;
 
   > div {
-    width: 99%;
+    width: 100%;
   }
 }

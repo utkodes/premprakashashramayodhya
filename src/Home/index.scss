@@ -1,0 +1,25 @@
+.home-container {
+  .content {
+    display: flex;
+    padding: 10px;
+
+    > * {
+      flex: 1;
+    }
+
+    .desc {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .home-container {
+    .content {
+      flex-direction: column;
+    }
+  }
+}
